@@ -1,0 +1,239 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import "icomoon.css";
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap");
+:root {
+  font-size: 62.5%;
+  --pale-green: #e1efe6;
+  --grey: #aeb7b3;
+  --yellow: #efcb68;
+  --purble: #160c28;
+  --rich-black: #000411;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Edu SA Beginner", serif;
+  color: var(--purble);
+  min-height: 100vh;
+  background-color: var(--pale-green);
+  header {
+    width: 100%;
+    background-color: white;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    div:nth-child(1) {
+      display: grid;
+      place-self: center;
+      img {
+        width: 100px;
+        aspect-ratio: 1/1;
+      }
+    }
+    nav {
+      display: grid;
+      place-self: center;
+      i {
+        font-size: 5rem;
+        color: var(--purble);
+        &:hover {
+          color: var(--yellow);
+        }
+      }
+      ul {
+        display: none;
+      }
+    }
+  }
+  main {
+    min-height: 70vh;
+    section {
+      margin: 2.5rem;
+      background-color: white;
+      border-radius: 15px;
+      padding: 1rem;
+      text-align: center;
+
+      &:nth-child(1) {
+        img {
+          border-radius: 50%;
+          width: 50%;
+          max-width: 200px;
+          aspect-ratio: 1/1;
+        }
+        h1 {
+          font-size: 2rem;
+          padding: 2rem;
+          font-weight: 600;
+        }
+        p {
+          font-size: 1.8rem;
+          line-height: 2.1rem;
+        }
+      }
+      &:nth-child(2) {
+        padding: 2rem;
+        h2 {
+          font-size: 2rem;
+          padding: 2rem 0;
+          font-weight: 600;
+        }
+        > i {
+          font-size: 2.5rem;
+          padding: 2rem;
+        }
+        p:nth-child(3) {
+          font-size: 1.8rem;
+          line-height: 2.1rem;
+          margin-bottom: 2rem;
+        }
+        ul {
+          font-size: 1.8rem;
+          line-height: 2.1rem;
+          font-weight: 600;
+          li {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #480eb427;
+            p {
+              margin: 1.5rem 0;
+              font-weight: normal;
+            }
+            i {
+              font-size: 2.8rem;
+            }
+            &:last-child {
+              > img {
+                width: 3rem;
+              }
+              border: none;
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        place-content: center;
+        place-items: center;
+        h2 {
+          grid-column: 1/-1;
+          font-size: 2.5rem;
+          padding: 2rem 0;
+          font-weight: 600;
+        }
+        div {
+          a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: var(--purble);
+            font-size: 1.4rem;
+            overflow: hidden;
+
+            img {
+              width: 150px;
+              aspect-ratio: 1/0.6;
+              border-radius: 10px;
+            }
+            &:hover {
+              p {
+                color: var(--yellow);
+              }
+
+              img {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    background-color: var(--purble);
+    padding: 2rem;
+    text-align: center;
+    div:nth-child(1) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+
+      a {
+        text-decoration: none;
+        color: var(--pale-green);
+        i {
+          font-size: 2.2rem;
+        }
+        &:hover {
+          color: var(--yellow);
+        }
+      }
+    }
+
+    div:nth-child(2) {
+      p {
+        font-size: 1.5rem;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  body header nav i {
+    display: none;
+  }
+  body header nav ul {
+    display: flex;
+    gap: 2rem;
+    font-size: 2.5rem;
+    a {
+      text-decoration: none;
+      color: var(--purble);
+      &:hover {
+        color: var(--yellow);
+      }
+    }
+  }
+
+  body main section:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2.5rem;
+    text-align: start;
+
+    h1 {
+      align-self: center;
+      font-size: 3rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      grid-row: span 2;
+      width: 50%;
+      min-width: 250px;
+      display: grid;
+      place-self: center;
+    }
+    p {
+      font-size: 2rem;
+      line-height: 2.3rem;
+    }
+  }
+  body main section:nth-child(3) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

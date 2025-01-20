@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("/fonts/icomoon.eot?f6abq7");
+  src: url("/fonts/icomoon.eot?f6abq7#iefix") format("embedded-opentype"),
+    url("/fonts/icomoon.ttf?f6abq7") format("truetype"),
+    url("/fonts/icomoon.woff?f6abq7") format("woff"),
+    url("/fonts/icomoon.svg?f6abq7#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+  content: "\e906";
+}
+.icon-menu:before {
+  content: "\e900";
+}
+.icon-git:before {
+  content: "\e901";
+  color: #f05032;
+}
+.icon-mongodb:before {
+  content: "\e902";
+  color: #47a248;
+}
+.icon-mysql:before {
+  content: "\e903";
+  color: #4479a1;
+}
+.icon-node-dot-js:before {
+  content: "\e904";
+  color: #393;
+}
+.icon-php:before {
+  content: "\e90a";
+  color: #777bb4;
+}
+.icon-html5:before {
+  content: "\e90b";
+  color: #e34f26;
+}
+.icon-javascript:before {
+  content: "\e90c";
+  color: #f7df1e;
+}
+.icon-css3:before {
+  content: "\e90d";
+  color: #1572b6;
+}
+.icon-gmail:before {
+  content: "\e907";
+  color: #d14836;
+}
+.icon-facebook1:before {
+  content: "\e905";
+}
+.icon-envelope1:before {
+  content: "\e908";
+}
+.icon-home:before {
+  content: "\e909";
+}
+.icon-embed2:before {
+  content: "\ea80";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
